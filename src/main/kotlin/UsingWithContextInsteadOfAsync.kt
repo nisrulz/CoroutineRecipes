@@ -15,6 +15,7 @@ fun main() {
         val task2 = withContext(Dispatchers.Default) { " task2: ✅," }
         val task3 = withContext(Dispatchers.Default) { doSomeWork();" task3: ✅," }
         val task4 = withContext(Dispatchers.Default) { " task4: ✅" }
+
         val resultOnceAllComplete = task1 + task2 + task3 + task4
         println(resultOnceAllComplete)
     }
